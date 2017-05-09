@@ -92,9 +92,9 @@ defmodule ListTest do
     {microsec, reversed} = :timer.tc fn ->     # Erlang function, yay!
       # It takes about 1.6 seconds on my laptop even with only 10000 elements.
       # For 1..1_000_000, it would take a really long time.
-      Enum.reduce 1..10000, [], fn (i, l) -> List.insert_at(l, -1, i) end
+      Enum.reduce 1..10_000, [], fn (i, l) -> List.insert_at(l, -1, i) end
     end
-    assert reversed == Enum.to_list(1..10000)
+    assert reversed == Enum.to_list(1..10_000)
     IO.puts "inserting at the end of a list took #{microsec} microsecs"
   end
 
