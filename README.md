@@ -10,6 +10,14 @@ I'm not sure! I originally **wrote** these exercises as I was learning the langu
 **reading** them will be of much use though. I recommend you open each file in your favorite editor, change it,
 break it, rewrite the code in your own style, etc. Experiment, and if you find a mistake, then bonus points for you!
 
+
+## Hora do Gagá
+
+```
+mix new hora_do_gaga
+```
+
+
 ### You have to start somewhere.
 
 **[01-hello-world.exs](01-hello-world.exs)** - We start at the very beginning: our first message to the world!
