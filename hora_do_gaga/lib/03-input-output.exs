@@ -10,8 +10,8 @@ defmodule CowInterrogator do
   Gets name from standard IO
   """
   def get_name do
-    IO.gets("What is your name? ")
-    |> String.trim
+    n = IO.gets("What is your name? ")
+    n |> String.trim
   end
 
   def get_cow_lover do
@@ -50,7 +50,7 @@ defmodule InputOutputTest do
   test "checks if cow_art returns string from support/cow.txt" do
     # this call checks if cow_art function returns art from txt file
     art = CowInterrogator.cow_art
-    assert trim(art) |> first == "(" # first is implemented in String module
+    assert art |> trim |> first == "(" # first is implemented in String module
   end
 end
 
