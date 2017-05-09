@@ -61,7 +61,9 @@ defmodule ListTest do
   end
 
   test "Enum.filter_map" do
-    some = Enum.filter_map sample, &(String.first(&1) >= "M"), &(&1 <> " Morgan")
+    some = Enum.filter_map sample,
+      &(String.first(&1) >= "M"),
+      &(&1 <> " Morgan")
     assert some == ["Tim Morgan", "Mac Morgan"]
   end
 
